@@ -75,18 +75,31 @@ void loop(void)
   display.display();
 
   //Print order: outputWatt, outputVolt, outputAmp, shuntVolt, sourceVolt
-  Serial.print(outputWatt, 3);
-  Serial.print(" ");
-  Serial.print(outputVolt, 3);
-  Serial.print(" ");
-  Serial.print(outputAmp, 4);
-  Serial.print(" ");
-  Serial.print(shuntVolt, 5);
-  Serial.print(" ");
-  Serial.print(sourceVolt, 3);
-  Serial.println();
+  
+  String output = "";
+  char buff[10];
+  
+  String outputWattString = dtostrf(outputWatt, 0, 3, buff);
+  output += outputWattString;
+  output += " ";
 
+  String outputVoltString = dtostrf(outputVolt, 0, 3, buff);
+  output += outputVoltString;
+  output += " ";
+  
+  String outputAmpString = dtostrf(outputVolt, 0, 4, buff);
+  output += outputAmpString;
+  output += " ";
 
+  String shuntVoltString = dtostrf(shuntVolt, 0, 5, buff);
+  output += shuntVoltString;
+  output += " ";
+  
+  String sourceVoltString = dtostrf(sourceVolt, 0, 3, buff);
+  output += sourceVoltString;
+  
+  Serial.println(output);
+  Serial.flush();
 
 
   delay(POLL_RATE);
