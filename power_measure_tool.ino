@@ -108,7 +108,7 @@ void loop(void)
   output += outputVoltString;
   output += " ";
   
-  String outputAmpString = dtostrf(outputVolt, 0, 4, buff);
+  String outputAmpString = dtostrf(outputAmp, 0, 4, buff);
   output += outputAmpString;
   output += " ";
 
