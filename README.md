@@ -7,7 +7,7 @@ An Arduino setup to measure the voltage and current of a load.
 
 <a href="misc/schematic.png"><img src="misc/schematic.png" align="centre" width="500" height="615" ></a>
 
-This logical schematic differs slightly from the physical curcuit layout. The motor here acts as the load. The barrel jack powers the load independently from the Arduino (USB) power supply.
+This logical schematic differs slightly from the physical curcuit layout. The motor here acts as the load. The barrel jack is to indicate that the load is powered independently from the Arduino (USB) power supply.
 
 ##Parts List:
 1. Arduino Uno R3
