@@ -24,3 +24,7 @@ The results are dynamically written to the Arduino serial port at baud rate 1152
 4. Shunt voltage: 0.03805 volts
 5. Input voltage: 5.118 volts (= output voltage + shunt voltage)
 
+The output power is smoothed with the last 10 values (equivalent to 1 second worth of readings). The other readings are in their raw form.
+
+##References
+1. [Smoothing algorithm](http://arduino.cc/en/Tutorial/Smoothing)
