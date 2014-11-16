@@ -15,7 +15,7 @@ This logical schematic differs slightly from the physical curcuit layout. The mo
 3. Adafruit 1.3" 128x64 OLED set to I2C
 
 ##Results output:
-The results are dynamically written to the Arduino serial port at baud rate 115200. A sample result is:  
+The results are dynamically written to the Arduino serial port at 115200 baud, 8 data bits, no parity and 1 stop bit. A sample result is:  
 1.987 5.080 0.3911 0.03805 5.118
 
 1. Output power: 1.987 watts
